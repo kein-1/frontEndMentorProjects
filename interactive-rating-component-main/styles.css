@@ -1,0 +1,78 @@
+
+.wrapper{
+    padding:200px;
+    background-color: rgb(8, 7, 7);
+}
+
+.container-overall{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid;
+    flex-shrink: 0;
+    gap:20px;
+    background-color: hsl(213, 19%, 18%);
+    /* background-color: hsl(216, 12%, 8%) */
+}
+
+.main-header{
+    font-size: 20px;
+    font-weight:700;
+    color: hsl(0, 0%, 100%);
+    font-family: "Overpass", sans-serif;
+}
+
+.sub-messages{
+    font-size:15px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+}
+
+
+#star-icon {
+    height: 15px;
+    width: 15px;
+    border: 1px solid hsl(216, 12%, 54%);
+    background-color: hsl(216, 12%, 54%);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.newPic{
+    display: flex;
+    justify-content: center;
+}
+
+.ratings-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+}
+
+.ratings-container > button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: hsl(217,12%,63%);
+    background-color: hsl(217,12%,63%);
+    color: hsl(0, 0%, 100%);
+    
+}
+
+.submit-btn{
+    background-color: hsl(25, 97%, 53%);
+    display: flex;
+    justify-content: center;
+    width:auto;
+    border-radius: 15px;
+    padding: 10px;   
+}
+
+button:focus{
+    background-color: hsl(25, 97%, 53%);
+}
+
+.submit-btn:hover{
+    background-color: hsl(0, 0%, 100%);
+}
