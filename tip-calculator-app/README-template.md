@@ -62,7 +62,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+-Retrieving the value from our input with event object target.value. Initially I wasn't 
+sure how to immediately update the text as soon as the user types in the bill 
 
 To see how you can add code snippets, see below:
 
@@ -79,6 +80,19 @@ const proudOfThisFunc = () => {
   console.log('🎉')
 }
 ```
+```js
+billTotal.addEventListener("input", (e) => {
+
+    // console.log(e.target.value)
+    
+    // e.target.value is used to target the value we input in our <input> element
+    // which we grabbed 
+    totalVal.innerText = e.target.value
+    total = e.target.value
+    // console.log(document.querySelector(':focus'))
+    console.log(total)
+})
+
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
@@ -99,9 +113,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@kein-1](https://www.frontendmentor.io/profile/kein-1)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 

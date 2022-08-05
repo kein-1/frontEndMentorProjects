@@ -25,32 +25,33 @@
 					<h3>Bill</h3>
 					
 					<input id ="bill-amt" type="number" min="0">
-					<!-- <img id="dollar" src="./images/icon-dollar.svg" alt=""> -->
+					<img id="dollar" src="./images/icon-dollar.svg" alt="">
 				</div>
 				<div class="tip-percents">
 					<h3>Select Tip %</h3>
 					<div class="tip-btns">
-						<button class="five" id="five">5%</button>
-						<button class="ten" id="ten">10%</button>
-						<button class="fiffteen" id="fifteen">15%</button>
-						<button class="twenty-five" id="twenty-five">25%</button>
-						<button class="fifty" id="fifty">50%</button>
-						<button class="custom" id="custom">custom</button>
+						<button class="btn-tip" value="0.05" id="five">5%</button>
+						<button class="btn-tip" value="0.1"id="ten">10%</button>
+						<button class="btn-tip" value="0.15"id="fifteen">15%</button>
+						<button class="btn-tip" value="0.25"id="twenty-five">25%</button>
+						<button class="btn-tip" value="0.50"id="fifty">50%</button>
+						<input id ="custom" type="number" min="0" placeholder="Custom">
+						<!-- <button class="btn-tip" value="0.05"id="custom">custom</button> -->
 					</div>
 				</div>
 				<div class="people">
 					<h3>Number of People</h3>
-					<input type="text">
+					<input id="people-count" type="text">
 				</div>
 
 			</div>
 			<div class="right-items">
 				<div class="tip-container">
 					<div class="tip-text">
-						<h3>Tip Amount </h3>
+						<h3 >Tip Amount </h3>
 						<h3>/person</h3>
 					</div>
-					<h3>$0.00</h3>
+					<h3 id="tip-total-val">$0.00</h3>
 
 				</div>
 
@@ -59,10 +60,10 @@
 						<h3>Total </h3>
 						<h3>/person</h3>
 					</div>
-					<h3>$0.00</h3>
+					<h3 id="total-val">$0.00</h3>
 				</div>
 
-				<button class="reset">
+				<button id="reset" class="reset">
 					Reset
 				</button>
 
