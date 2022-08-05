@@ -45,7 +45,7 @@ tipBtns.forEach(element => element.addEventListener("click", (e) => {
 
 custom.addEventListener("input", (e) => {
     if (population != 0 && total !=0){
-        tipTotal = e.target.value * total
+        tipTotal = e.target.valueAsNumber * total * 0.01
         tipPP = Number(((tipTotal)/population).toFixed(2))
         totalPP = Number(((total+tipTotal)/population).toFixed(2))
         console.log(typeof(tipTotal))
