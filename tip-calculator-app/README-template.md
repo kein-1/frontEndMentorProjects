@@ -64,6 +64,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 -Retrieving the value from our input with event object target.value. Initially I wasn't 
 sure how to immediately update the text as soon as the user types in the bill 
+-Had trouble fitting the left and right items the same height. I used "align-self:stretch" to fix it
+
 
 To see how you can add code snippets, see below:
 

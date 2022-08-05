@@ -38,8 +38,8 @@ tipBtns.forEach(element => element.addEventListener("click", (e) => {
         console.log(typeof(tipTotal))
         console.log(typeof(tipPP))
         console.log(typeof(totalPP))
-        tipVal.innerText = tipPP
-        totalVal.innerText = totalPP
+        tipVal.innerText = "$" + tipPP
+        totalVal.innerText = "$" + totalPP
     }
 }))
 
@@ -51,8 +51,8 @@ custom.addEventListener("input", (e) => {
         console.log(typeof(tipTotal))
         console.log(typeof(tipPP))
         console.log(typeof(totalPP))
-        tipVal.innerText = tipPP
-        totalVal.innerText = totalPP
+        tipVal.innerText = "$" + tipPP
+        totalVal.innerText = "$" + totalPP
     }
 })
 
