@@ -8,4 +8,4 @@ GitHub landing page: https://github.com/kein-1/frontEndMentorProjects
 
 | No. |     Project Name and Link                           |       
 | --- |:---------------------------------------------------:| 
-| 1   | [Tip Calculator App](https://github.com/kein-1/frontEndMentorProjects/tree/main/tip-calculator-app)      
+| 1   | [Tip Calculator App](https://tip-calculator-app-eb8.pages.dev/)      

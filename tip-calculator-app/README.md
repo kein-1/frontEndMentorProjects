@@ -4,8 +4,6 @@ Coded using HTML/CSS/JS w/ CSS FlexBox
 ![Tip-Calculator-App](https://user-images.githubusercontent.com/87039063/183218983-4169ee59-3f2c-4fb0-b2a5-cfb191de28c0.png)
 
 
-
-
 # Frontend Mentor - Tip calculator app solution
 
 This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -20,6 +18,9 @@ Users should be able to:
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Calculate the correct tip and total cost of the bill per person
+### Links:
+
+- Live Site URL: [https://tip-calculator-app-eb8.pages.dev/](https://tip-calculator-app-eb8.pages.dev/)
 
 ## My process
 
@@ -30,7 +31,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -51,19 +51,6 @@ borders. If we specifiy a width of 100%, boxborder accounts for the border and w
 I used this technique to fit the input tab to be the width of the full parent div. I set it to width of 100%, which accounts for the borders/padding from the parent div
 
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 ```js
 billTotal.addEventListener("input", (e) => {
 
