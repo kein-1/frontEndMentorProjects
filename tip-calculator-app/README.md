@@ -63,7 +63,7 @@ billTotal.addEventListener("input", (e) => {
     // console.log(document.querySelector(':focus'))
     console.log(total)
 })
-
+```
 
 ## Author
 
