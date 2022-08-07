@@ -1,0 +1,68 @@
+* {
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  background-color: hsl(27deg, 66%, 92%);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 200px 500px;
+  padding: 50px;
+  gap: 20px;
+}
+
+.balance-container, .spending-container, .money-container {
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.balance-container {
+  background-color: hsl(10deg, 79%, 65%);
+  justify-content: space-between;
+}
+
+.spending-container {
+  background-color: whitesmoke;
+  flex-direction: column;
+}
+
+.money-container {
+  justify-content: space-between;
+}
+
+.balance-info > * {
+  flex: 1;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+img {
+  width: auto;
+  height: auto;
+}
+
+hr {
+  border: none;
+  width: 100%;
+  margin-top: 0;
+  border-bottom: 1px solid hsl(28deg, 10%, 53%);
+}
+
+/*# sourceMappingURL=styles.css.map */
