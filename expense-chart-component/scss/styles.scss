@@ -1,6 +1,10 @@
 $font-stack: 'Space Mono', monospace;
+$font-weight-1: 400;
+$font-weight-2: 700;
+
 $background-color: hsl(27, 66%, 92%);
 $container-1-color: hsl(10, 79%, 65%);
+$container-1-color-hover: hsl(10, 79%, 65%,0.5);
 $container-2-color: whitesmoke;
 
 * {
@@ -9,6 +13,9 @@ $container-2-color: whitesmoke;
 
 
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $background-color;
 }
 
@@ -16,12 +23,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    margin: 200px 500px;
+    margin: 3rem;
     padding: 50px;
     gap: 20px;
+    box-sizing: border-box;
 }
 
-.balance-container, .spending-container, .money-container{
+.balance-container, .spending-container{
     padding: 25px;
     border-radius: 12px;
     display: flex;
@@ -42,17 +50,76 @@ body{
 
 .money-container{
     justify-content: space-between;
+    display: flex;
+    flex:1;
+    flex-wrap: wrap;
 }
 
 
-.balance-info > * {
+
+.balance-info, .change-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.balance-info > h3, .change-info > h3{
+    margin-bottom: 0;
+}
+
+.balance-info > h1, .change-info > h3{
+    margin-top: 0;
+}
+
+.change-info > h3{
+    text-align: right;
+}
+
+.bar-data{
+    display: flex;
+    gap:20px;
+    margin-bottom: 0;
     flex: 1;
+    align-items: baseline;
+    
+}
+
+
+
+// .data-box{
+// }
+
+.data-container{
+    width: 14.2%;
+    text-align: center;
+}
+
+.data-container > h3{
+    margin-top: 0.5rem;
+}
+
+
+
+.data{
+    width: 100%;
+    height: 100px;
+    background-color: $container-1-color;
+    border-radius: 10px;
+}
+
+.data:hover{
+    background-color: $container-1-color-hover;
+}
+
+.data:target{
+    background-color: hsl(186, 34%, 60%);
 }
 
 
 h1 {
     font-size: 2rem;
-  }
+    font-weight: $font-weight-1;
+}
   
 h2 {
     font-size: 1.5rem;
@@ -60,6 +127,7 @@ h2 {
 
 h3{
     font-size: 1rem;
+    font-weight: $font-weight-2
 }
 
 
@@ -72,6 +140,6 @@ img{
 hr {
     border:none;
     width: 100%;
-    margin-top: 0;
+    margin: 2rem 0;
     border-bottom: 1px solid hsl(28, 10%, 53%);
 }
