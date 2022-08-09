@@ -5,6 +5,8 @@ $background-color: hsl(27, 66%, 92%);
 $container-1-color: hsl(10, 79%, 65%);
 $container-1-color-hover: hsl(10, 79%, 65%,0.5);
 $container-2-color: whitesmoke;
+$dark-brown: hsl(25, 47%, 15%);
+$medium-brown: hsl(28, 10%, 53%);
 
 * {
     font-family: $font-stack;
@@ -91,6 +93,7 @@ body{
     margin-bottom: 0;
     flex: 1;
     align-items: flex-end;
+    justify-content: space-evenly;
 }
 
 .spend-header, .money-container{
@@ -98,12 +101,12 @@ body{
 }
 
 
-// .data-box{
-// }
-
 .data-container{
-    width: 14.2%;
+    display: flex;
+    flex-direction: column;
+    width: 10%;
     text-align: center;
+    align-items: center;
 }
 
 .data-container > h3{
@@ -123,12 +126,25 @@ body{
     background-color: hsl(186, 34%, 60%);
 }
 
+.value{
+    padding: 7px;
+    color:white;
+    background-color: $dark-brown;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 150%;
+}
+
 
 .data{
     width: 100%;
     height: 100px;
     background-color: $container-1-color;
     border-radius: 10px;
+}
+
+.day{
+    color:$medium-brown;
 }
 
 h1 {
@@ -157,4 +173,12 @@ hr {
     width: 100%;
     margin: 2rem 0;
     border-bottom: 1px solid hsl(28, 10%, 53%);
+}
+
+#spent{
+    color:$dark-brown;
+}
+
+.month-style{
+    color:$medium-brown;
 }

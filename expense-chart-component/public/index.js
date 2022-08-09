@@ -19,6 +19,6 @@ let printIt = (data) => {
         values[i].innerText = "$" + data[i].amount
         values[i].style.visibility = "hidden"
     }
-    spent.innerText=sum*4
+    spent.innerText="$" + sum*4
 }
 
