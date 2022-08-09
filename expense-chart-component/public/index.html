@@ -16,7 +16,7 @@
   <body>
     <div class="wrapper">
       <div class="balance-container">
-        <div class="balance-info">
+        <div class="balance-money">
           <h3>My balance</h3>
           <h2>$1000</h2>
         </div>
@@ -26,43 +26,51 @@
 
       <div class="spending-container">
         <div class="spend-header">
-          <h1>Spending - Last 7 Days</h1>
+          <h2>Spending - Last 7 Days</h2>
         </div>
         <div class="bar-data">
-            <div class="data-container">
+            <div class="data-container" tabindex="-1">
+              <h3 class="value"></h3>
               <div class="data" id="mon"></div>
               <h3>mon</h3> 
             </div>
             
-            <div class="data-container">
+            <div class="data-container"tabindex="-1">
+              <h3 class="value"></h3>
               <div class="data" id="tue"></div>
-              <h3>tues</h3> 
+              <h3>tue</h3> 
             </div>  
 
 
-            <div class="data-container">
+            <div class="data-container" tabindex="-1">
+              <h3 class="value"></h3>
               <div class="data" id="wed"></div>
               <h3>wed</h3> 
             </div>  
 
 
-            <div class="data-container">
-              <div class="data" id="thur"></div>
+            <div class="data-container" tabindex="-1">
+              <h3 class="value"></h3>
+              <div class="data" id="thurs"></div>
               <h3>thu</h3> 
             </div>  
 
-            <div class="data-container">
+            <div class="data-container" tabindex="-1">
+              <h3 class="value"></h3>
               <div class="data" id="fri"></div>
+
               <h3>fri</h3> 
             </div>  
 
-            <div class="data-container">
-              <div class="data" id="sat"></div>
+            <div class="data-container" tabindex="-1">
+              <h3 class="value"></h3>
+              <div class="data" id="sat" ></div>
               <h3>sat</h3> 
             </div>  
 
-            <div class="data-container">
-              <div class="data" id="sun"></div>
+            <div class="data-container" tabindex="-1">
+              <h3 class="value"></h3>
+              <div class="data" id="sun" ></div>
               <h3>sun</h3> 
             </div>  
             
@@ -77,7 +85,7 @@
         <div class="money-container">
           <div class="balance-info">
             <h3>Total this month</h3>
-            <h1>$1000</h1>
+            <h1 id="spent">$1000</h1>
           </div>
           
           <div class="change-info">

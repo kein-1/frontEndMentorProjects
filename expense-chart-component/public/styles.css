@@ -12,11 +12,12 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  justify-content: center;
   margin: 3rem;
   padding: 50px;
   gap: 20px;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .balance-container, .spending-container {
@@ -30,6 +31,17 @@ body {
 .balance-container {
   background-color: hsl(10deg, 79%, 65%);
   justify-content: space-between;
+  align-items: stretch;
+}
+
+.balance-money > h3 {
+  margin-bottom: 0;
+  color: white;
+}
+
+.balance-money > h2 {
+  margin-top: 0.5rem;
+  color: white;
 }
 
 .spending-container {
@@ -42,12 +54,13 @@ body {
   display: flex;
   flex: 1;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .balance-info, .change-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: stretch;
 }
 
 .balance-info > h3, .change-info > h3 {
@@ -67,7 +80,11 @@ body {
   gap: 20px;
   margin-bottom: 0;
   flex: 1;
-  align-items: baseline;
+  align-items: flex-end;
+}
+
+.spend-header, .money-container {
+  flex-wrap: wrap;
 }
 
 .data-container {
@@ -79,6 +96,18 @@ body {
   margin-top: 0.5rem;
 }
 
+.data:hover {
+  background-color: hsla(10deg, 79%, 65%, 0.5);
+}
+
+.data-container:hover .value, .data-container:focus .value {
+  visibility: visible !important;
+}
+
+.data-container:focus > .data {
+  background-color: hsl(186deg, 34%, 60%);
+}
+
 .data {
   width: 100%;
   height: 100px;
@@ -86,21 +115,13 @@ body {
   border-radius: 10px;
 }
 
-.data:hover {
-  background-color: hsla(10deg, 79%, 65%, 0.5);
-}
-
-.data:target {
-  background-color: hsl(186deg, 34%, 60%);
-}
-
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h3 {
