@@ -1,5 +1,6 @@
 # Frontend Mentor - Expenses Chart Component
 
+![Expense-Sketch](https://user-images.githubusercontent.com/87039063/183783695-ff2ff4d2-b253-4b7e-bc8b-e186ffe6bfde.png)
 
 
 ## Welcome! 👋
