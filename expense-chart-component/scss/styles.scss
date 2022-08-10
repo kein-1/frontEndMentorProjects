@@ -44,6 +44,11 @@ body{
     background-color: $container-1-color;
     justify-content: space-between;
     align-items: stretch;
+    margin-bottom: 0;
+}
+
+.balance-money >h2{
+    margin-bottom: 0;
 }
 
 .balance-money > h3{
