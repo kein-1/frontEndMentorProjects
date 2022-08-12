@@ -1,8 +1,6 @@
 # Frontend Mentor - Time tracking dashboard
 
 
-
-
 ![Dashboard](https://user-images.githubusercontent.com/87039063/184275741-4e52c8b1-364d-4277-94cf-8185a403a823.png)
 
 
