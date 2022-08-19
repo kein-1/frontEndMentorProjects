@@ -5,7 +5,7 @@
 
 
 ![Interactive Card Details](https://user-images.githubusercontent.com/87039063/185718600-c5a5ca10-c65c-4524-a979-d7d5cb12d216.png)
-)
+
 
 
 ## The challenge
@@ -43,6 +43,7 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 ### Built with
 
 -HTML, CSS, JS
+
 -JS is used to validate the form fields 
 
 
