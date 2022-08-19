@@ -4,7 +4,8 @@
 ## Welcome! 👋
 
 
-![Tip Calc](https://user-images.githubusercontent.com/87039063/184502180-0dfa639f-646e-4b23-985c-b30cda555a81.png)
+![Interactive Card Details](https://user-images.githubusercontent.com/87039063/185718600-c5a5ca10-c65c-4524-a979-d7d5cb12d216.png)
+)
 
 
 ## The challenge
@@ -35,16 +36,19 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ### Links:
 
-- Live Site URL: [https://tip-calculator-app-eb8.pages.dev/](https://tip-calculator-app-eb8.pages.dev/)
+- Live Site URL: [https://interactive-card.pages.dev/](https://interactive-card.pages.dev/)
 
 ## My process
 
 ### Built with
 
+-HTML, CSS, JS
+-JS is used to validate the form fields 
+
 
 ### What I learned
 
-
+-Got better with positioning certain items `
 
 ## Author
 

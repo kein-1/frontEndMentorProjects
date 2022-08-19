@@ -37,7 +37,8 @@ input{
 }
 
 .cont-left{
-    background-color: hsl(279, 53%, 17%);
+    background-image: linear-gradient(to top left, hsl(246, 59%, 7%), hsl(278, 94%, 30%));
+    /* background-color: hsl(270, 3%, 87%); */
     width: 30%;
 }
 
@@ -45,7 +46,7 @@ input{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: white;
     width: 70%;
     
 }
@@ -166,4 +167,12 @@ input{
     background-color: hsl(278, 68%, 11%);
     color: white;
     margin-top: 2rem;
+}
+
+.thank-you{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
 }
