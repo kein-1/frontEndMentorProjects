@@ -12,9 +12,7 @@ Thanks for checking out this front-end coding challenge.
 
 ## The challenge
 
-Your challenge is to build out this intro section with dropdown navigation and get it looking as close to the design as possible.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 Your users should be able to:
 
@@ -26,20 +24,20 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ### Links:
 
-- Live Site URL: [https://interactive-card.pages.dev/](https://interactive-card.pages.dev/)
+- Live Site URL: [https://intro-section-nav-bar.pages.dev/](https://intro-section-nav-bar.pages.dev/)
 
 ## My process
 
 ### Built with
 
--HTML, CSS, JS
-
--JS is used to validate the form fields 
-
+- HTML, CSS, JS
+- JS is used for event listeners. We show the hidden "features" when the link is clicked. I accomplished this with a "toggle" by toggling a certain class to be added 
+or removed 
 
 ### What I learned
 
--Got better with positioning certain items `
+- Got better with positioning certain items  
+- Worked on navbar skills with dropodown menu
 
 ## Author
 
