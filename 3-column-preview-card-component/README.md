@@ -1,6 +1,6 @@
 # Frontend Mentor - 3-column preview card component
 
-![![3-Column](https://user-images.githubusercontent.com/87039063/189425631-d014e1d5-1ec1-4213-9f96-d44b0c0eb28f.png)
+![3-Column](https://user-images.githubusercontent.com/87039063/189425631-d014e1d5-1ec1-4213-9f96-d44b0c0eb28f.png)
 
 
 ## Welcome! 👋
