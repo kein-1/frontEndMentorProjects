@@ -1,6 +1,7 @@
 # Frontend Mentor - 3-column preview card component
 
-![Design preview for the 3-column preview card component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the 3-column preview card component coding challenge](![3-Column](https://user-images.githubusercontent.com/87039063/189425465-c233d02e-a42e-481f-a951-a41d6a762a1a.png)
+)
 
 ## Welcome! 👋
 
@@ -29,9 +30,12 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ## My process
 
+-Wasn't too bad. Had some issues with media queries but other than that it was good
+-I wrapped the grid container around a flexbox div to center my container
+
 ### Built with
 
-
+HTML,CSS,JS
 
 ### What I learned
 
