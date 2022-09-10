@@ -1,0 +1,58 @@
+:root{
+
+    /* Primary */
+    --color-1 : hsl(356, 100%, 66%);
+    --color-2: hsl(355, 100%, 74%);
+    --color-3:  hsl(208, 49%, 24%);
+
+    /* Neutral */
+    --color-4 : hsl(0, 0%, 100%);
+    --color-5: hsl(240, 2%, 79%);
+    --color-6:  hsl(207, 13%, 34%);
+    --color-7: hsl(240, 10%, 16%);
+
+    /* Gradient */
+    --color-8 : hsl(13, 100%, 72%);
+    --color-9:hsl(353, 100%, 62%);
+    /* font-family: 'Ubuntu', sans-serif; */
+    /* font-family: 'Overpass', sans-serif; */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    max-width: 1440px;
+}
+
+a{
+    text-decoration:none;
+    color: var(--color-4);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+
+}
+
+li{
+    list-style: none;
+    
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+} 
+
+p{
+    font-size: 1rem;
+}
+
