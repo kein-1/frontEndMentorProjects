@@ -33,6 +33,23 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ### What I learned
 
+-Centering an element with position absolute. This was tricky in the mobile design and I had to figure out how to center the nav bar links when they appear. A common 
+approach is to use the following code:  
+
+```
+.parent{
+  position: relative;
+}
+.child{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+What this means is that absolute's position is relative to the parent's. So top and left 50% means it is 50% away from the parent's top and left. This moves the item
+closer to the bottom right. Then, we need to center it by using translate here. Translate here is based on the child's width and height values, not the parents 
+```
 
 ## Author
 
