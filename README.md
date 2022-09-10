@@ -14,4 +14,4 @@ GitHub landing page: https://github.com/kein-1/frontEndMentorProjects
 | 4   | [Interactive Card Details](https://interactive-card.pages.dev/)|   
 | 5   | [Intro Section Nav Bar](https://interactive-card.pages.dev/)|
 | 6   | [3-card-component](https://3-card-component.pages.dev/)|
-
+| 7   | [Sunnyside Agency](https://sunnyside-landing.pages.dev/)|

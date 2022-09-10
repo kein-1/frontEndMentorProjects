@@ -1,6 +1,7 @@
 # Frontend Mentor - Sunnyside agency landing page
 
-![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
+![sunnyside-1](https://user-images.githubusercontent.com/87039063/189504219-c8de3212-52b6-4277-a4c8-eef721f3b1af.png)
+
 
 ## Welcome! 👋
 
@@ -25,15 +26,17 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ### Links:
 
-- Live Site URL: [https://intro-section-nav-bar.pages.dev/](https://intro-section-nav-bar.pages.dev/)
+- Live Site URL: [https://sunnyside-landing.pages.dev/](https://sunnyside-landing.pages.dev/)
 
 ## My process
 
 ### Built with
 
+-HTML/CSS/JS
+
 ### What I learned
 
--Centering an element with position absolute. This was tricky in the mobile design and I had to figure out how to center the nav bar links when they appear. A common 
+-Centering an element with position absolute during mobile design. This was tricky in the mobile design and I had to figure out how to center the nav bar links when they appear. A common 
 approach is to use the following code:  
 
 ```
@@ -47,7 +50,7 @@ approach is to use the following code:
   transform: translate(-50%, -50%);
 }
 
-What this means is that absolute's position is relative to the parent's. So top and left 50% means it is 50% away from the parent's top and left. This moves the item
+-What this means is that absolute's position is relative to the parent's. So top and left 50% means it is 50% away from the parent's top and left. This moves the item
 closer to the bottom right. Then, we need to center it by using translate here. Translate here is based on the child's width and height values, not the parents 
 ```
 
