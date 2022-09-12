@@ -1,0 +1,67 @@
+
+:root{
+    --color-1 : hsl(237, 18%, 59%);
+    --color-2: hsl(345, 95%, 68%);
+    --color-3: hsl(0, 0%, 100%);
+    --color-4: hsl(236, 21%, 26%);
+    --color-5: hsl(235, 16%, 14%);
+    --color-6: hsl(234, 17%, 12%);
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    height: 100vh;
+    background-image: url(./images/bg-stars.svg);
+    background-color: var(--color-6);
+}
+
+h1,h3,h4{
+    font-family: 'Red Hat Display', sans-serif;
+    
+}
+
+h1{
+    color:hsl(0, 0%, 100%);
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+h3{
+    color:hsl(345, 95%, 68%);
+    font-size: 5rem;
+    margin: 0;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.date-cont{
+    display: grid;
+    grid-template-columns: repeat(4,150px);
+    grid-template-rows: 150px auto;
+    text-align: center;
+    gap: 1rem;
+}
+
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(236, 21%, 26%);
+
+}
