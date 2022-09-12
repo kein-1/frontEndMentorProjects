@@ -19,16 +19,16 @@ const timer = () => {
 
     // let f = moment(future).format("dddd, MMMM Do YYYY, h:mm:ss a")
     // let futureDate = moment(future).format("dddd, MMMM Do YYYY, h:mm:ss a")
-    futureDays = moment(future).diff(moment(), "days")
-    futureHours = moment(future).diff(moment(), "hours")
-    futureMinutes = moment(future).diff(moment(), "minutes")
-    futureSeconds = moment(future).diff(moment(), "seconds")
+    futureDays = moment(future).diff(moment(), "days") % 30
+    futureHours = moment(future).diff(moment(), "hours") % 24
+    futureMinutes = moment(future).diff(moment(), "minutes") % 60
+    futureSeconds = moment(future).diff(moment(), "seconds") % 60
     counter = futureDays % 60
 
-    futureDays < 10 ? days.innerText = "0" + futureDays % 30 : days.innerText = futureDays % 30
-    futureHours < 10 ? hours.innerText = "0" + futureHours % 24 : hours.innerText = futureHours % 24
-    futureMinutes < 10 ? minutes.innerText = "0" + futureMinutes % 60 : minutes.innerText = futureMinutes % 60
-    futureSeconds < 10 ? seconds.innerText = "0" + futureSeconds % 60 : seconds.innerText = futureSeconds % 60
+    futureDays < 10 ? days.innerText = "0" + futureDays : days.innerText = futureDays 
+    futureHours < 10 ? hours.innerText = "0" + futureHours : hours.innerText = futureHours 
+    futureMinutes < 10 ? minutes.innerText = "0" + futureMinutes: minutes.innerText = futureMinutes 
+    futureSeconds < 10 ? seconds.innerText = "0" + futureSeconds : seconds.innerText = futureSeconds 
     
     console.log(`Future Days: ${futureDays}`)
     console.log(`Future Hours: ${futureHours}`)
