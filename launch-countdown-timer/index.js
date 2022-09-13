@@ -6,7 +6,9 @@ const minutes = document.getElementById("minutes")
 const seconds = document.getElementById("seconds")
 
 //[year, month, day, hour, minute, second, millisecond]
-const future = [2022,8,20,22,55,41]
+// const future = [2022,8,20,22,55,41]
+
+const futureDate = moment().add(8,"days").add(23,"hours").add(55,"minutes").add(41,"seconds")
 
 let counter;
 let intervalID;
@@ -19,10 +21,10 @@ const timer = () => {
 
     // let f = moment(future).format("dddd, MMMM Do YYYY, h:mm:ss a")
     // let futureDate = moment(future).format("dddd, MMMM Do YYYY, h:mm:ss a")
-    futureDays = moment(future).diff(moment(), "days") % 30
-    futureHours = moment(future).diff(moment(), "hours") % 24
-    futureMinutes = moment(future).diff(moment(), "minutes") % 60
-    futureSeconds = moment(future).diff(moment(), "seconds") % 60
+    futureDays = futureDate.diff(moment(), "days") % 30
+    futureHours = futureDate.diff(moment(), "hours") % 24
+    futureMinutes = futureDate.diff(moment(), "minutes") % 60
+    futureSeconds = futureDate.diff(moment(), "seconds") % 60
     counter = futureDays % 60
 
     futureDays < 10 ? days.innerText = "0" + futureDays : days.innerText = futureDays 

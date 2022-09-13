@@ -6,6 +6,8 @@
     --color-4: hsl(236, 21%, 26%);
     --color-5: hsl(235, 16%, 14%);
     --color-6: hsl(234, 17%, 12%);
+    --color-7: hsl(236, 30%, 19%);
+    --color-8: hsl(236, 30%, 19%);
 
 }
 
@@ -28,7 +30,7 @@ h1,h3,h4{
 
 h1{
     color:hsl(0, 0%, 100%);
-    font-size: 1rem;
+    font-size: 1.5rem;
     letter-spacing: 0.5rem;
 }
 
@@ -62,15 +64,41 @@ h4{
     grid-template-columns: repeat(4,150px);
     grid-template-rows: 150px auto;
     text-align: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .grid-item{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(236, 21%, 26%);
+    /* background-color: hsl(236, 21%, 26%); */
+    /* background-image: linear-gradient(var(--color-4),var(--color-5)) */
+    background-image: linear-gradient(var(--color-7) 50%,var(--color-4) 50%);
+    border-radius: 15px;
+    position: relative;
 }
+
+.grid-item:before, .grid-item::after{
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    top:50%;
+    transform: translateY(-10px);
+    background-color: var(--color-6);
+
+}
+
+.grid-item::before{
+    right:0;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.grid-item::after{
+    left:0;
+    border-radius: 0px 20px 20px 0;
+}
+
 
 .social-media{
     position: absolute;

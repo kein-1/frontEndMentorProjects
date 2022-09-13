@@ -34,25 +34,15 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 ### Built with
 
 -HTML/CSS/JS
-
+-Moment.js
 ### What I learned
 
--Centering an element with position absolute during mobile design. This was tricky in the mobile design and I had to figure out how to center the nav bar links when they appear. A common 
-approach is to use the following code:  
+-Used Moment.js, a popular JS package that deals with date and time
+-Centering elements: I realized for position: absolute, top 50% means the item's top edge will be shifted down based on 50% of the container's height. This means the element won't necessarily be cenetered
+-Remember with translate, it uses the element's dimensions while using top,left etc with position:absolute will use the parent's dimensions
+-To center things with position and translate, remember we must translate(-X) and (-Y) 50% of its height and width BECAUSE it is the edge of the item that is 50% from the parent container. We need to move this backwards. The edge and the midpoint of the item is 50% of its own width/height!
+-Really my first time using CSS Psudoelements :before and :after. These are basically style elements without using HTML. We must include a "content" attribute. 
 
-```
-.parent{
-  position: relative;
-}
-.child{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
--What this means is that absolute's position is relative to the parent's. So top and left 50% means it is 50% away from the parent's top and left. This moves the item
-closer to the bottom right. Then, we need to center it by using translate here. Translate here is based on the child's width and height values, not the parents 
 ```
 
 ## Author
