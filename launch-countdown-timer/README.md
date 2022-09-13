@@ -31,12 +31,18 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ## My process
 
+-Toughest part was figuring out how to use setInterval function and how to stop it. I realized that setInterval returns an ID. So we can use a global variable to keep track of how long the countdown has been running and then when that variable hits 0, we call the clearInterval() with the ID returned by setInterval
+-To get the countdown to change, I used document.getElementByID for each div and updated the values with each setInterval call
+-I used moment.diff() to take the difference between the future moment object date and the current moment() object date. The values are returned as days, hours, minutes, and seconds
+
+
 ### Built with
 
 -HTML/CSS/JS
 -Moment.js
 ### What I learned
 
+-Used setInterval for the first time. Javascript timer are all in milliseconds
 -Used Moment.js, a popular JS package that deals with date and time
 -Centering elements: I realized for position: absolute, top 50% means the item's top edge will be shifted down based on 50% of the container's height. This means the element won't necessarily be cenetered
 -Remember with translate, it uses the element's dimensions while using top,left etc with position:absolute will use the parent's dimensions
