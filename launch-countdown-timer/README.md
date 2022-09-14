@@ -31,13 +31,13 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ## My process
 
--Toughest part was figuring out how to use setInterval function and how to stop it. I realized that setInterval returns an ID. So we can use a global variable to keep track of how long the countdown has been running and then when that variable hits 0, we call the clearInterval() with the ID returned by setInterval
--To get the countdown to change, I used document.getElementByID for each div and updated the values with each setInterval call
--I used moment.diff() to take the difference between the future moment object date and the current moment() object date. The values are returned as days, hours, minutes, and seconds
+-Toughest part was figuring out how to use setInterval function and how to stop it. I realized that setInterval returns an ID. So we can use a global variable to keep track of how long the countdown has been running and then when that variable hits 0, we call the clearInterval() with the ID returned by setInterval  
+-To get the countdown to change, I used document.getElementByID for each div and updated the values with each setInterval call  
+-I used moment.diff() to take the difference between the future moment object date and the current moment() object date. The values are returned as days, hours, minutes, and seconds  
 
--Used Node.js (Npm) to store a browser-styled Moment.min.js file, which I included with a script tag in my HTML file
--I wanted to use import with Moment but I didn't know or couldn't figure out how to do it without Webpack. Thus, I had to include it as a script tag. I put it before my main index.js script since it will load before my index.js runs, hence I can refer to it in my index.js
--Used npm to run scripts to upload to github
+-Used Node.js (Npm) to store a browser-styled Moment.min.js file, which I included with a script tag in my HTML file  
+-I wanted to use import with Moment but I didn't know or couldn't figure out how to do it without Webpack. Thus, I had to include it as a script tag. I put it before my main index.js script since it will load before my index.js runs, hence I can refer to it in my index.js  
+-Used npm to run scripts to upload to github  
 
 
 ### Built with
