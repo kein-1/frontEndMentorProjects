@@ -1,6 +1,6 @@
 # Frontend Mentor - Launch countdown timer
 
-![Design preview for the Launch countdown timer coding challenge](./design/desktop-preview.jpg)
+![Launch-Countdown-Timer](https://user-images.githubusercontent.com/87039063/190035073-aa5eecaa-511d-436f-aaac-2bde2da8af27.png)
 
 ## Welcome! 👋
 
@@ -27,7 +27,7 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ### Links:
 
-- Live Site URL: [https://sunnyside-landing.pages.dev/](https://sunnyside-landing.pages.dev/)
+- Live Site URL: [https://launch-countdown-timer.pages.dev/](https://launch-countdown-timer.pages.dev/)
 
 ## My process
 
