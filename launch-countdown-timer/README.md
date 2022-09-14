@@ -53,7 +53,6 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 -To center things with position and translate, remember we must translate(-X) and (-Y) 50% of its height and width BECAUSE it is the edge of the item that is 50% from the parent container. We need to move this backwards. The edge and the midpoint of the item is 50% of its own width/height!  
 -Really my first time using CSS Psudoelements :before and :after. These are basically style elements without using HTML. We must include a "content" attribute.   
 
-```
 
 ## Author
 
