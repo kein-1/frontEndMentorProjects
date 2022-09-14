@@ -46,12 +46,12 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 -Moment.js
 ### What I learned
 
--Used setInterval for the first time. Javascript timer are all in milliseconds
--Used Moment.js, a popular JS package that deals with date and time
--Centering elements: I realized for position: absolute, top 50% means the item's top edge will be shifted down based on 50% of the container's height. This means the element won't necessarily be cenetered
--Remember with translate, it uses the element's dimensions while using top,left etc with position:absolute will use the parent's dimensions
--To center things with position and translate, remember we must translate(-X) and (-Y) 50% of its height and width BECAUSE it is the edge of the item that is 50% from the parent container. We need to move this backwards. The edge and the midpoint of the item is 50% of its own width/height!
--Really my first time using CSS Psudoelements :before and :after. These are basically style elements without using HTML. We must include a "content" attribute. 
+-Used setInterval for the first time. Javascript timer are all in milliseconds  
+-Used Moment.js, a popular JS package that deals with date and time  
+-Centering elements: I realized for position: absolute, top 50% means the item's top edge will be shifted down based on 50% of the container's height. This means the element won't necessarily be cenetered  
+-Remember with translate, it uses the element's dimensions while using top,left etc with position:absolute will use the parent's dimensions  
+-To center things with position and translate, remember we must translate(-X) and (-Y) 50% of its height and width BECAUSE it is the edge of the item that is 50% from the parent container. We need to move this backwards. The edge and the midpoint of the item is 50% of its own width/height!  
+-Really my first time using CSS Psudoelements :before and :after. These are basically style elements without using HTML. We must include a "content" attribute.   
 
 ```
 
