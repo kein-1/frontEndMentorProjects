@@ -33,7 +33,7 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ### Links:
 
-- Live Site URL: [https://launch-countdown-timer.pages.dev/](https://launch-countdown-timer.pages.dev/)
+- Live Site URL: [https://todo-list-3lp.pages.dev/](https://todo-list-3lp.pages.dev/)
 
 ## My process
 
