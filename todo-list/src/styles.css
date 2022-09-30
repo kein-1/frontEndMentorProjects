@@ -5,9 +5,12 @@
 	font-family: "Josefin Sans", sans-serif;
 }
 
+
+
 body {
 	margin: 0;
 	padding: 0;
+	height: 100vh;
 }
 
 :root {
@@ -34,15 +37,32 @@ body {
 }
 
 #root {
-	/* height: auto; */
+
 	position: relative;
-	background-color: var(--color-8);
+	height: 100%;
 }
 
 .App {
 	text-align: center;
-	height: 100vh;
+	height: 100%;
 	position: relative;
+}
+
+.light-background{
+	background-color: var(--color-3);
+}
+
+.dark-background{
+	background-color: var(--color-8);
+}
+
+
+.font-light {
+	color: var(--color-3);
+}
+
+.font-dark {
+	color: var(--color-8);
 }
 
 h1 {
@@ -52,15 +72,22 @@ h1 {
 
 li {
 	list-style: none;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	font-weight: 400;
-	border: 1px solid white;
+	border-top: 0.5px solid hsl(233, 14%, 35%);
+	border-bottom: 0.5px solid hsl(233, 14%, 35%);
 	width: 100%;
 	padding: 1.5rem;
 	text-align: left;
 	display: flex;
 	align-items: center;
 	position: relative;
+	cursor: pointer;
+
+}
+
+li:hover .icon-cross{
+	display: block;
 }
 
 li > input {
@@ -69,18 +96,19 @@ li > input {
 
 
 
-.font-light {
-	color: var(--color-3);
+.background-light {
+	width: 100%;
+	height: 30%;
+	background-image: url("./images/bg-desktop-light.jpg");
+	background-repeat: no-repeat;
 }
 
-.background {
-	/* position: absolute; */
+.background-dark {
 	width: 100%;
 	height: 30%;
 	background-image: url("./images/bg-desktop-dark.jpg");
 	background-repeat: no-repeat;
 }
-
 
 
 .nav-header {
@@ -101,19 +129,24 @@ li > input {
 	margin: auto;
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	/* height: 100%; */
 	align-items: center;
-	gap: 1rem;
-	border:1px solid white;
-	transform: translateY(-15%);
+	gap: 2rem;
+	padding: 1rem;
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	transform: translateX(-50%);
 }
 
-.tasks-cont {
+.tasks-cont-light,.tasks-cont-dark {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 	height: auto;
 	align-items: flex-start;
+	border-radius: .5rem;
+	overflow: hidden;
 }
 
 .sub-li-cont{
@@ -127,33 +160,43 @@ li > input {
 	display: none;
 }
 
-li:hover{
-	cursor: pointer;
-}
 
-li:hover .icon-cross{
-	display: block;
-}
-
-.input-cont {
+.input-cont{
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
 	gap: 25px;
+	border-radius: 1rem;
 }
 
 
-
-.input-text {
+.input-text{
 	width: 100%;
-	padding: 1rem;
+	padding: 1rem 1rem 1rem 4rem;
 	font-size: 1.25rem;
+	border:none;
+	border-radius: 0.5rem;
+}
+
+.input-dark{
+	background-color: var(--color-9);
+	overflow: hidden;
+}
+
+.input-light{
+	background-color: var(--color-3);
+	overflow: hidden;
+
+}
+
+.dark-cont, .tasks-cont-dark{
+	background-color: var(--color-9);
 }
 
 
-
-.input-cont, .tasks-cont, .input-text{
-	background-color: var(--color-9);
+.light-cont,.tasks-cont-light{
+	background-color: var(--color-3);
+	border: 1px solid black;
 }
 
 
@@ -165,7 +208,7 @@ input[type=radio]{
 .custom-radio{
 	width:  1.5rem;
 	height: 1.5rem;
-	border: 1px solid pink;
+	border: 1px solid hsl(233, 14%, 35%);
 	border-radius: 50%;
 	margin: 0 1.5rem 0 0;
 }
@@ -179,21 +222,58 @@ input[type=radio]{
 }
 
 .checked-box{
-	height: 15px;
-	width: 15px;
+	height: 1.5rem;
+	width: 1.5rem;
 	display: none;
 }
 
-input[type=radio]:checked + .checked-box{
+.checked-box-active{
 
 	display: inline-block;
-	/* background: linear-gradient(to-bottom, hsl(192, 100%, 67%) to hsl(280, 87%, 65%)); */
-	/* background-repeat: no-repeat; */
+	height: 1.5rem;
+	width: 1.5rem;
 	background-image: url("./images/icon-check.svg");
-	background-size: cover;
+	background-repeat: no-repeat;
+	background: url("./images/icon-check.svg"), linear-gradient(rgba(87, 221, 255, 1) , rgba(192, 88, 243, 1));
+	background-size:cover;
+	border-radius: 50%;
 }
+
+
+
 
 .li-checked{
 	color: var(--color-12);
 	text-decoration: line-through;
+}
+
+.buttons-bottom-cont{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+	padding: .5rem 1rem;
+}
+
+
+.buttons-bottom-cont-small{
+	display: flex;
+	/* width: 100%; */
+	gap: 1rem;
+}
+
+.filter-buttons{
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: var(--color-12);
+	font-size: 1rem;
+}
+
+.filter-buttons:focus{
+	color: hsl(220, 98%, 61%);
+}
+
+.filter-buttons:hover{
+	color:hsl(0, 0%, 98%);
 }

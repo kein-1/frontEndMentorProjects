@@ -36,13 +36,8 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ## My process
 
--Toughest part was figuring out how to use setInterval function and how to stop it. I realized that setInterval returns an ID. So we can use a global variable to keep track of how long the countdown has been running and then when that variable hits 0, we call the clearInterval() with the ID returned by setInterval  
--To get the countdown to change, I used document.getElementByID for each div and updated the values with each setInterval call  
--I used moment.diff() to take the difference between the future moment object date and the current moment() object date. The values are returned as days, hours, minutes, and seconds  
-
--Used Node.js (Npm) to store a browser-styled Moment.min.js file, which I included with a script tag in my HTML file  
--I wanted to use import with Moment but I didn't know or couldn't figure out how to do it without Webpack. Thus, I had to include it as a script tag. I put it before my main index.js script since it will load before my index.js runs, hence I can refer to it in my index.js  
--Used npm to run scripts to upload to github  
+-Hardest part is light and dark toggling. I was rendering different elements based on the 
+current state. This is very lightly not the beset way to do it!
 
 
 ### Built with
@@ -50,13 +45,6 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 -HTML/CSS/JS
 -Moment.js
 ### What I learned
-
--Used setInterval for the first time. Javascript timer are all in milliseconds  
--Used Moment.js, a popular JS package that deals with date and time  
--Centering elements: I realized for position: absolute, top 50% means the item's top edge will be shifted down based on 50% of the container's height. This means the element won't necessarily be cenetered  
--Remember with translate, it uses the element's dimensions while using top,left etc with position:absolute will use the parent's dimensions  
--To center things with position and translate, remember we must translate(-X) and (-Y) 50% of its height and width BECAUSE it is the edge of the item that is 50% from the parent container. We need to move this backwards. The edge and the midpoint of the item is 50% of its own width/height!  
--Really my first time using CSS Psudoelements :before and :after. These are basically style elements without using HTML. We must include a "content" attribute.   
 
 
 ## Author
