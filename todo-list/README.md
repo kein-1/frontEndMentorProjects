@@ -37,14 +37,18 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ## My process
 
+-First react project  
 -Hardest part is light and dark toggling. I was rendering different elements based on the 
 current state. This is very lightly not the beset way to do it!
+-Tricky part was the buttons (all, active, complete). Basically I never wanted to modify 
+the origian array with these tasks. I displayed a modified list with filter depending on the state I am in. I added a state to each all, active, and complete button 
 
 
 ### Built with
 
--HTML/CSS/JS
--Moment.js
+-React/CSS
+-v4 for unique ids
+
 ### What I learned
 
 
